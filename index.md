@@ -1,6 +1,13 @@
-## 见证天然的爱情
+## 天然的爱情
 
-You can use the [editor on GitHub](https://github.com/tttt2342/tttt2342.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+### 2022/6/13
+夜晚天天最终和然然正式地表了白，希望能够一直和然然在一起。
+
+
+### 2022/6/14
+天天和然然开心地玩了一天，在这个安静的夜晚，然然终于答应和天天在一起了。
+我们是恋人了！
+
+### 
