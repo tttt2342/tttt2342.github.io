@@ -1,5 +1,5 @@
 # 天然的爱情
-<div align=center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1842025914&auto=0&height=66"></iframe></div>
+<div align=center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1842025914&auto=1&height=66"></iframe></div>
 ## 留言板
 ```
 ·没有任何困难是不可战胜的，只要天天和然然一同面对，只要永怀希望与热忱之心。
