@@ -2,10 +2,11 @@
 # 天然的爱情
 <div align=center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1842025914&auto=1&height=66"></iframe></div>
 
-[TOC]
+
 
 ## 留言板
 ```
+·亲爱的，在这疫情的艰难时刻，我一定和你在一起，陪在你的身边的！加油，一切都会过去的！
 ·宝贝，和你在一起真的很开心，真的不用太担心天天哦！然然对我的好，我都能感受得到铭记在心，放心吧老婆！！！
 ·然然从未打扰到天天，千万不要有顾虑哦，你可是我的女朋友，最爱的小然！！！
 ·没有任何困难是不可战胜的，只要天天和然然一同面对，只要永怀希望与热忱之心。
