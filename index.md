@@ -23,7 +23,7 @@
         h2 {
             font-size: 220%;
             font-weight: 400;
-            color:rgb(254,254,254);
+            
         }
         
         .content {
@@ -32,7 +32,7 @@
             top: 40%;
             transform: translate(0, -50%);
             text-align: center;
-            color: rgb(254,254,254);
+            
         }
         
         .timer {
@@ -49,7 +49,7 @@
 
 <body>
     <div class="content">
-        <h2>我们已经在一起了</h2>
+        <h2 style="color:white">我们已经在一起了</h2>
         <div class="timer">
             <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
         </div>
