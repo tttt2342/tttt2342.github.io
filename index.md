@@ -1,6 +1,6 @@
 
 # 天然的爱情
-<div align=center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1842025914&auto=1&height=66"></iframe></div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 
 <html lang="zh-CN">
@@ -49,7 +49,7 @@
 
 <body>
     <div class="content">
-        <h2 style="color:white">我们已经在一起了</h2>
+        <h2>我们已经在一起了</h2>
         <div class="timer">
             <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
         </div>
