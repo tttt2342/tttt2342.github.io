@@ -23,6 +23,7 @@
         h2 {
             font-size: 220%;
             font-weight: 400;
+            color：rgb(254,254,254)
         }
         
         .content {
