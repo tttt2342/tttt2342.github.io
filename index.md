@@ -58,7 +58,7 @@
 
     <script>
         function timer() {
-            var start = new Date(2022, 5, 14); 
+            var start = new Date(2022, 5, 15); 
             var t = new Date() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
