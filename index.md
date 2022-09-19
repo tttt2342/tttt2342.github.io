@@ -2,7 +2,7 @@
 # 天然的爱情
 <div align=center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1842025914&auto=1&height=66"></iframe></div>
 
-<!DOCTYPE html>
+
 <html lang="zh-CN">
 
 <head>
@@ -55,7 +55,7 @@
 
     <script>
         function timer() {
-            var start = new Date(2022, 6, 14); // 2015.7.2
+            var start = new Date(2022, 6, 14); 
             var t = new Date() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
