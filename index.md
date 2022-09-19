@@ -2,7 +2,85 @@
 # 天然的爱情
 <div align=center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1842025914&auto=1&height=66"></iframe></div>
 
+<!DOCTYPE html>
+<html lang="zh-CN">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>恋爱计时</title>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+            font-size: 85%;
+            margin: 0;
+        }
+        
+        h2 {
+            font-size: 220%;
+            font-weight: 400;
+        }
+        
+        .content {
+            position: absolute;
+            width: 100%;
+            top: 40%;
+            transform: translate(0, -50%);
+            text-align: center;
+        }
+        
+        .timer {
+            font-size: 180%;
+            line-height: 1.5;
+            margin: 1em 0;
+        }
+        
+        .timer b {
+            color: rgb(253, 99, 125);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h2>我们已经在一起了</h2>
+        <div class="timer">
+            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+        </div>
+    </div>
+
+    <script>
+        function timer() {
+            var start = new Date(2022, 6, 14); // 2015.7.2
+            var t = new Date() - start;
+            var h = ~~(t / 1000 / 60 / 60 % 24);
+            if (h < 10) {
+                h = "0" + h;
+            }
+            var m = ~~(t / 1000 / 60 % 60);
+            if (m < 10) {
+                m = "0" + m;
+            }
+
+            var s = ~~(t / 1000 % 60);
+            if (s < 10) {
+                s = "0" + s;
+            }
+            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+            document.getElementById('h').innerHTML = h;
+            document.getElementById('m').innerHTML = m;
+            document.getElementById('s').innerHTML = s;
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
+</body>
+
+</html>
 
 ## 留言板
 ```
