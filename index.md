@@ -1,6 +1,6 @@
 
 # 天然的爱情
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br />
 
 
 <html lang="zh-CN">
@@ -49,7 +49,7 @@
 
 <body>
     <div class="content">
-        <br /><br /><br />
+        <br /><br /><br /><br /><br /><br />
         <h2>我们已经在一起了</h2>
         <div class="timer">
             <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
@@ -58,7 +58,7 @@
 
     <script>
         function timer() {
-            var start = new Date(2022, 6, 14); 
+            var start = new Date(2022, 5, 14); 
             var t = new Date() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
