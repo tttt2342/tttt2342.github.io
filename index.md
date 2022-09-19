@@ -23,7 +23,7 @@
         h2 {
             font-size: 220%;
             font-weight: 400;
-            color：rgb(254,254,254)
+            color:rgb(254,254,254);
         }
         
         .content {
@@ -32,6 +32,7 @@
             top: 40%;
             transform: translate(0, -50%);
             text-align: center;
+            color: rgb(254,254,254);
         }
         
         .timer {
