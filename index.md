@@ -60,7 +60,7 @@
         function timer() {
             var start = new Date(2022, 5, 15); 
             var t = new Date() - start;
-            t = t + 8989000
+            t = t + 8589000
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
                 h = "0" + h;
