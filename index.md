@@ -85,11 +85,22 @@
 </body>
 
 </html>
-#### 跳转到:
+#### 快速跳转
 [留言板](#留言板)<br />
 [恋爱日志](#恋爱日志)<br />
 [网址导航](#网址导航)
     
+<html>
+<body>
+<script>
+function hug()
+{
+    alert("开心心开心心！mua！");
+}
+</script>
+<button type="button" onclick="hug()">抱抱天天</button>
+</body>
+</html>
     
 ## 留言板
 ```
