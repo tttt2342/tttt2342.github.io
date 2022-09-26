@@ -88,7 +88,7 @@
 #### 跳转到:
 [留言板](#留言板)<br />
 [恋爱日志](#恋爱日志)<br />
-[导航栏](#导航栏)
+[网址导航](#网址导航)
     
     
 ## 留言板
@@ -290,7 +290,7 @@
 ### 2022
 
 
-## 导航栏
+## 网址导航
 <a href="https://github.com/tttt2342/tttt2342.github.io/edit/main/index.md" target="_blank">编辑此页</a>
 <a href="https://vocabulary.com" target="_blank">单词</a>
 <a href="https://www.cug.edu.cn/">地大首页</a>
