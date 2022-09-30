@@ -6,6 +6,27 @@
 <html lang="zh-CN">
 
 <head>
+    <script type="text/javascript">   
+    function password() {   
+        var testV = 1;   
+        var pass1 = prompt('请输入密码','');   
+        while (testV < 3) {   
+            if (!pass1)   
+            history.go(-1);   
+            if (pass1 == "123") {//初始密码123   
+            alert('密码正确');   
+            break;   
+        }   
+        testV+=1;   
+        var pass1 =   
+        prompt('密码错误!请重新输入:');   
+        }   
+        if (pass1!="password" & testV ==3)   
+        history.go(-1);   
+        return " ";   
+    }   
+    document.write(password());   
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
