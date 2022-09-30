@@ -63,7 +63,8 @@
     var pass1 = prompt('密码错误!请重新输入:');   
     }   
     if (pass1!="password" & testV ==3)   
-    history.go(-1);   
+    history.go(-1); 
+    window.location.href='ttrrlove.com/docs';
     return " ";   
     }
     document.write(password());   
