@@ -55,7 +55,7 @@
     while (testV < 3) {   
     if (!pass1)   
     history.go(-1);   
-    if (pass1 == "123") {//初始密码123   
+    if ((pass1 == "511227") || (pass1 == "122751")) {//初始密码123   
     alert('密码正确');   
     break;   
     }   
