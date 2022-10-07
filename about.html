@@ -92,6 +92,7 @@
 				<div class="col-md-7 welcome-w3left">
 					<h4>Whispers</h4>
 					<p>
+					·听到宝贝说出：“觉得自己拥有超级好的爱情”“有你这样的老公真幸福”我就好开心好开心啊啊啊啊！超感动的！
 					·真的很想，被你需要，很怕自己在你的世界没有存在感。<br />
 					·小傻，有不开心的时候，要努力告诉天天哦，什么都不需要顾虑。我每次都会一直想着你，等待你告诉天天，等待你开心起来。<br />
 					·宝贝宝贝日志顺序调好啦！看起来会方便一些耶耶耶！！！<br />
@@ -113,31 +114,7 @@
 		</div>
 	</div>
 	<!-- //about -->
-	 <script>
-        function timer() {
-            var start = new Date(2022, 5, 15); 
-            var t = new Date() - start;
-            t = t + 8589000
-            var h = ~~(t / 1000 / 60 / 60);
-            if (h < 10) {
-                h = "0" + h;
-            }
-            var m = ~~(t / 1000 / 60 % 60);
-            if (m < 10) {
-                m = "0" + m;
-            }
-
-            var s = ~~(t / 1000 % 60);
-            if (s < 10) {
-                s = "0" + s;
-            }
-            document.getElementById('h').innerHTML = h;
-            document.getElementById('m').innerHTML = m;
-            document.getElementById('s').innerHTML = s;
-        }
-        timer();
-        setInterval(timer, 1000);
-    </script>
+	 
 	<!-- statistics -->
 	<div class="container">
 		<div class="stats welcome"> 
@@ -169,7 +146,31 @@
 		</div>
 	</div>
 	<!-- //statistics -->
-	
+	<script>
+		function timer() {
+		    var start = new Date(2022, 5, 15); 
+		    var t = new Date() - start;
+		    t = t + 8589000
+		    var h = ~~(t / 1000 / 60 / 60);
+		    if (h < 10) {
+			h = "0" + h;
+		    }
+		    var m = ~~(t / 1000 / 60 % 60);
+		    if (m < 10) {
+			m = "0" + m;
+		    }
+
+		    var s = ~~(t / 1000 % 60);
+		    if (s < 10) {
+			s = "0" + s;
+		    }
+		    document.getElementById('h').innerHTML = h;
+		    document.getElementById('m').innerHTML = m;
+		    document.getElementById('s').innerHTML = s;
+		}
+		timer();
+		setInterval(timer, 1000);
+    	</script>
 	<!-- slid -->
 	<div class="slid">
 		<div class="container">
