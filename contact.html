@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
 <title>Contact</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
@@ -35,21 +40,15 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<h1><a href="index.html">Holiday<span> Spot</span></a></h1>
+						<h1><a href="index.html">天然<span> 的爱情</span></a></h1>
 					</div> 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-left"> 
-							<li><a href="index.html" class="w3ls-hover">Home</a></li>
-							<li><a href="about.html" class="btn w3ls-hover">About</a></li>   
-							<li><a href="tours.html" class="btn w3ls-hover">Tours</a></li>
-							<li><a href="#" class="dropdown-toggle btn w3ls-hover" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="icons.html">Web Icons</a></li>
-									<li><a href="codes.html">Short Codes</a></li>     
-								</ul>
-							</li>  
-							<li><a href="contact.html" class="btn w3ls-hover active">Contact</a></li>
+							<li><a href="index.html" class="w3ls-hover active">天然</a></li>
+							<li><a href="about.html" class="btn w3ls-hover">小屋</a></li>   
+							<li><a href="tours.html" class="btn w3ls-hover">相册</a></li>
+							<li><a href="contact.html" class="btn w3ls-hover">倒计时</a></li>
 						</ul>	   
 						<div class="social-icon">
 							<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
@@ -65,56 +64,47 @@
 		<div class="banner-text"> 
 			<div class="container"> 
 				<div class="banner-w3lstext">
-					<h2>Enjoy The Beauty Of Nature</h2>
+					<h2>恋爱倒计时</h2>
 				</div> 	 
 			</div>
 		</div>
 		<!-- //banner-text -->    
 	</div>
 	<!-- //banner --> 
-	<!-- contact -->
-	<div class="welcome contact">
-		<div class="container">  
-			<h3 class="agileits-title">Contact Us</h3>   
-			<div class="contact-w3ls-row">
-				<form action="#" method="post">
-					<input type="text" name="First Name" placeholder="First Name" required="">
-					<input class="email" name="Last Name" type="text" placeholder="Last Name" required="">
-					<input type="text" name="Number" placeholder="Mobile Number" required="">
-					<input class="email" name="Email" type="text" placeholder="Email" required="">
-					<textarea name="Message" placeholder="Message" required=""></textarea>
-					<input type="submit" value="SUBMIT">
-				</form>
-			</div>  
-		</div>
-	</div>
-	<!-- //contact -->
-	<!-- map -->
-	<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343829.1271629402!2d-122.61489066225299!3d47.681214398164556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906aba3648f20b%3A0xc5c4dedaafcead17!2sSeattle%2C+WA+98104!5e0!3m2!1sen!2sin!4v1461914461629"></iframe>
-	</div>
-	<!-- //map -->  
-	<!-- slid -->
-	<div class="slid">
-		<div class="container">
-			<h4>Today Special</h4> 
-			<p>In malesuada accumsan felis, a imperdiet arcu blandit sed. Ut id faucibus eros. Fusce sed vulputate dui, non consectetur felis. Etiam id enim sem. Suspendisse commodo tempor magna </p>
-		</div> 
-	</div>
-	<!-- //slid -->
-	<!-- newsletter -->
-	<div class="newsletter">
-		<div class="container">
-			<h3 class="agileits-title">Newsletter</h3>
-			<p>Mauris est odio laoreet laoreet sapien non, sollicitudin bibendum nulla amet purus sodales blandit.</p>
-			<form action="#" method="post"> 
-				<input type="text" name="email" placeholder="Enter your Email..." required="">
-				<input type="submit" value="Subscribe">
-				<div class="clearfix"> </div> 
-			</form> 
-		</div> 
-	</div>
-	<!-- //newsletter -->
+	<div class="content">
+        <br /><br /><br /><br /><br /><br />
+        <h2>天天然然已经在一起</h2>
+        <div class="timer">
+            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+        </div>
+    </div>
+
+    <script>
+        function timer() {
+            var start = new Date(2022, 5, 15); 
+            var t = new Date() - start;
+            t = t + 8589000
+            var h = ~~(t / 1000 / 60 / 60 % 24);
+            if (h < 10) {
+                h = "0" + h;
+            }
+            var m = ~~(t / 1000 / 60 % 60);
+            if (m < 10) {
+                m = "0" + m;
+            }
+
+            var s = ~~(t / 1000 % 60);
+            if (s < 10) {
+                s = "0" + s;
+            }
+            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+            document.getElementById('h').innerHTML = h;
+            document.getElementById('m').innerHTML = m;
+            document.getElementById('s').innerHTML = s;
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
 	<!-- footer start here --> 
 	<div class="footer-agile">
 		<div class="container">
