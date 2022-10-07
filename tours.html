@@ -23,6 +23,21 @@
 <!-- //web-fonts --> 
 </head>
 <body>
+	<script>
+		var password="";
+		password=prompt('小调皮现在还不可以看哦，老公还没有做好嘻嘻','');
+		function custom_close()
+		{
+		window.opener=null;
+		window.open('','_self');
+		window.close();
+		}
+		if (password !='20041227')
+		{
+		custom_close();
+		window.location.href='https://ttrrlove.com';
+		}
+	</script>
 	<!-- banner -->
 	<div class="banner about-banner">  
 		<div class="header agileinfo-header"><!-- header -->
