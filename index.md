@@ -45,6 +45,12 @@
             color: rgb(253, 99, 125);
         }
     </style>
+    <script>
+        function goToRoom()
+        {
+          window.location.href='ttrrlove.com/docs';
+        }
+    </script>
 </head>
 
 <body>
@@ -341,6 +347,8 @@ function hug()
 <a href="https://github.com/tttt2342/tttt2342.github.io/edit/main/index.md" target="_blank">编辑此页</a>
 <a href="https://vocabulary.com" target="_blank">单词</a>
 <a href="https://www.cug.edu.cn/">地大首页</a>
+<br />
+<button onclick="goToRoom()">Secret Room</button>
 
 
 
