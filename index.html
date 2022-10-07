@@ -319,7 +319,62 @@
 		<div class="clearfix"></div>  
 	</div>
 	<!--- //albums --> 
-	
+	<!-- statistics -->
+	<div class="container">
+		<div class="stats welcome"> 
+			<div class="col-xs-4 col-md-4 agileinfo_stats_grid">
+				<h4 class="counter" id="h">0</h4>
+				<h5>Hours</h5>
+			</div>
+			<div class="col-xs-4 col-md-4 agileinfo_stats_grid">
+				<h4 class="counter" id="m">0</h4>
+				<h5>Minutes</h5>
+			</div>
+			<div class="col-xs-4 col-md-4 agileinfo_stats_grid">
+				<h4 class="counter" id="s">0</h4>
+				<h5>Seconds</h5>
+			</div> 
+			<div class="clearfix"> </div> 
+			<!-- Stats-Number-Scroller-Animation-JavaScript -->
+			<script src="js/waypoints.min.js"></script> 
+			<script src="js/counterup.min.js"></script> 
+			<script>
+				jQuery(document).ready(function( $ ) {
+					$('.counter').counterUp({
+						delay: 10,
+						time: 1000
+					});
+				});
+			</script>
+			<!-- //Stats-Number-Scroller-Animation-JavaScript --> 
+		</div>
+	</div>
+	<!-- //statistics -->
+	<script>
+		function timer() {
+		    var start = new Date(2022, 5, 15); 
+		    var t = new Date() - start;
+		    t = t + 8589000
+		    var h = ~~(t / 1000 / 60 / 60);
+		    if (h < 10) {
+			h = "0" + h;
+		    }
+		    var m = ~~(t / 1000 / 60 % 60);
+		    if (m < 10) {
+			m = "0" + m;
+		    }
+
+		    var s = ~~(t / 1000 % 60);
+		    if (s < 10) {
+			s = "0" + s;
+		    }
+		    document.getElementById('h').innerHTML = h;
+		    document.getElementById('m').innerHTML = m;
+		    document.getElementById('s').innerHTML = s;
+		}
+		timer();
+		setInterval(timer, 1000);
+    	</script>
 	<!-- slid -->
 	<div class="slid">
 		<div class="container">
