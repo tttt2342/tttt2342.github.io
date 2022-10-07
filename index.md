@@ -48,7 +48,7 @@
     <script>
         function goToRoom()
         {
-          window.location.href='ttrrlove.com/docs';
+          window.location.href='docs';
         }
     </script>
 </head>
