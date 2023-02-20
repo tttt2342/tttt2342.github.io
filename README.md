@@ -1,2 +1,2 @@
-# 给个面子不许乱翻源码
+# Private Website!
 # tttt2342.github.io
