@@ -1,11 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>TT Space</title>
+<meta charset="utf-8">
+<title>ttSpace</title>
+	<style>
+		h1{
+			font-family:"\82F9\679C\4E3D\4E2D\9ED1";
+		}
+		p{
+			font-family:"\82F9\679C\4E3D\4E2D\9ED1";
+		}
+		li{
+			font-family:"\82F9\679C\4E3D\4E2D\9ED1";
+		}
+	</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">   
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" property="" />   
+<!-- //Custom Theme files -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script> 
+<!-- //js -->
+<!-- web-fonts --> 
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+<!-- //web-fonts --> 
 </head>
-  
 <body>
-  <h1 style="font-size:1.5em;font-family:'Times New Roman'">TT Space</h1>
+	
+	<!-- banner -->
+	<div class="banner">  
+		<div class="header agileinfo-header"><!-- header -->
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a href="work.html">TT<span> Space</span></a></h1>
+					</div> 
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-left"> 
+							<li><a href="index.html" class="w3ls-hover active">天然</a></li>
+							<li><a href="about.html" class="btn w3ls-hover">小屋</a></li>   
+							<li><a href="tours.html" class="btn w3ls-hover">相册</a></li>
+							<li><a href="contact.html" class="btn w3ls-hover">倒计时</a></li>
+						</ul>	   
+						<div class="social-icon">
+							 
+						</div> 
+						<div class="clearfix"> </div>
+					</div><!-- //navbar-collapse --> 
+				</div><!-- //container-fluid -->
+			</nav>
+		</div><!-- //header -->	
+		<!-- banner-text -->
+		<div class="banner-text"> 
+			<div class="container">
+				<div class="flexslider">
+					<ul class="slides"> 
+						<li>
+							<div class="banner-w3lstext">
+								<h2>Teddy Zhang</h2>
+								<p>Introduction</p>
+							</div>
+						</li>
+					</ul> 
+				</div> 	 
+			</div>
+		</div>
+		<!-- //banner-text -->    
+	</div>
+	<!-- //banner --> 
+	<!-- welcome -->
+	<div class="welcome">
+		<div class="container">  
+			<div class="welcome-grids"> 
+				<div class="col-md-7 welcome-w3left">
+					<h2>Tool Bar</h2>
+							
+							
+				</div>
+        <div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //welcome -->
+
+	<!-- statistics -->
+	<div class="container">
+		<div class="stats welcome"> 
+			<div class="col-xs-4 col-md-4 agileinfo_stats_grid">
+				<h4 class="counter" id="h">0</h4>
+				<h5>Hours</h5>
+			</div>
+			<div class="col-xs-4 col-md-4 agileinfo_stats_grid">
+				<h4 class="counter" id="m">0</h4>
+				<h5>Minutes</h5>
+			</div>
+			<div class="col-xs-4 col-md-4 agileinfo_stats_grid">
+				<h4 class="counter" id="s">0</h4>
+				<h5>Seconds</h5>
+			</div> 
+			<div class="clearfix"> </div> 
+			<!-- Stats-Number-Scroller-Animation-JavaScript -->
+			<script src="js/waypoints.min.js"></script> 
+			<script src="js/counterup.min.js"></script> 
+			<script>
+				jQuery(document).ready(function( $ ) {
+					$('.counter').counterUp({
+						delay: 10,
+						time: 1000
+					});
+				});
+			</script>
+			<!-- //Stats-Number-Scroller-Animation-JavaScript --> 
+		</div>
+	</div>
+	<!-- //statistics -->
+	<script>
+		function timer() {
+		    var start = new Date(2022, 5, 15); 
+		    var t = new Date() - start;
+		    t = t + 8589000
+		    var h = ~~(t / 1000 / 60 / 60);
+		    if (h < 10) {
+			h = "0" + h;
+		    }
+		    var m = ~~(t / 1000 / 60 % 60);
+		    if (m < 10) {
+			m = "0" + m;
+		    }
+
+		    var s = ~~(t / 1000 % 60);
+		    if (s < 10) {
+			s = "0" + s;
+		    }
+		    document.getElementById('h').innerHTML = h;
+		    document.getElementById('m').innerHTML = m;
+		    document.getElementById('s').innerHTML = s;
+		}
+		timer();
+		setInterval(timer, 1000);
+    	</script>
+	<!-- slid -->
+	<div class="slid">
+		<div class="container">
+			<h4>今天</h4> 
+			<p>也是爱你的一天！ </p>
+		</div> 
+	</div>
+	<!-- //slid -->
+	
+	<!-- footer start here --> 
+	<div class="footer-agile">
+		<div class="container">
+			<div class="footer-agileinfo"> 
+				<div class="col-md-5 col-sm-5 footer-wthree-grid"> 
+					<div class="agileits-w3layouts-tweets">  
+						<h5><a href="index.html">TTRR's love</a></h5> 
+						<div class="social-icon footerw3ls">
+							
+						</div>
+					</div>
+					<p>宝贝，右边的选项可以直接跳转</p>
+				</div> 
+				<div class="col-md-3 col-sm-3 footer-wthree-grid">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="index.html"><span class="glyphicon glyphicon-menu-right"></span> 首页</a></li>
+						<li><a href="about.html"><span class="glyphicon glyphicon-menu-right"></span> 小屋</a></li> 
+						<li><a href="tours.html"><span class="glyphicon glyphicon-menu-right"></span> 相册</a></li>
+						<li><a href="contact.html"><span class="glyphicon glyphicon-menu-right"></span> 倒计时</a></li>
+					</ul>
+				</div> 	 
+				<div class="col-md-4 col-sm-4 footer-wthree-grid">
+					<h3>Contact Info</h3>
+					<ul>
+						<li>SUSTech</li> 
+						<li>CUG</li>
+						<li>Phone: +86 18108139279</li>
+						<li><a href="ty.zhang@live.com"> ty.zhang@live.com</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>		
+			</div>
+			<div class="copy-right"> 
+				<p>Copyright &copy; 2022.Tianyi Zhang All rights reserved.</p>
+			</div>
+		</div>
+	</div> 
+	<!-- //footer end here -->  
+	<!-- FlexSlider --> 
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	</script>
+	<!-- End-slider-script --> 
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->   
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
+
