@@ -36,7 +36,21 @@
 <!-- //web-fonts --> 
 </head>
 <body>
-	
+	<script>
+		var password="";
+		password=prompt('Private Site! Password:','');
+		function custom_close()
+		{
+		window.opener=null;
+		window.open('','_self');
+		window.close();
+		}
+		if (password !='122751' and password !='511227')
+		{
+		custom_close();
+		window.location.href='https://ttrrlove.com/work.html';
+		}
+	</script>
 	<!-- banner -->
 	<div class="banner">  
 		<div class="header agileinfo-header"><!-- header -->
