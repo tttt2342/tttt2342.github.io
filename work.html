@@ -35,7 +35,7 @@
 <link href="http://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
 <!-- //web-fonts --> 
 </head>
-<body>
+<body background="images/phy.jpg">
 	
 	<!-- banner -->
 	<div class="banner">  
@@ -53,7 +53,7 @@
 						<h1><a href="work.html">TT<span> Space</span></a></h1>
 					</div> 
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<!--
+					
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-left"> 
 							<li><a href="work.html" class="w3ls-hover active">SPACE</a></li>
@@ -61,35 +61,15 @@
 							<li><a href="tours.html" class="btn w3ls-hover">LINK3</a></li>
 							<li><a href="contact.html" class="btn w3ls-hover">LINK4</a></li>
 						</ul>	   
-						<div class="social-icon">
-							 
-						</div> 
 						<div class="clearfix"> </div>
 					</div>
-					-->
+					
 					<!-- //navbar-collapse --> 
 					
 				</div><!-- //container-fluid -->
 			</nav>
 		</div><!-- //header -->	
-		<!-- banner-text -->
-		<!--
-		<div class="banner-text"> 
-			<div class="container">
-				<div class="flexslider">
-					<ul class="slides"> 
-						<li>
-							<div class="banner-w3lstext">
-								<h2>Teddy Zhang</h2>
-								<p>Introduction</p>
-							</div>
-						</li>
-					</ul> 
-				</div> 	 
-			</div>
-		</div>
-		-->
-		<!-- //banner-text -->   
+		  
 		
 	</div>
 	<!-- //banner --> 
@@ -117,63 +97,7 @@
 	</div>
 	<!-- //welcome -->
 	
-	<!-- statistics -->
 	
-	<div class="container">
-		<div class="stats welcome"> 
-			<div class="col-xs-4 col-md-4 agileinfo_stats_grid">
-				<h4 class="counter" id="h">0</h4>
-				<h5>Hours</h5>
-			</div>
-			<div class="col-xs-4 col-md-4 agileinfo_stats_grid">
-				<h4 class="counter" id="m">0</h4>
-				<h5>Minutes</h5>
-			</div>
-			<div class="col-xs-4 col-md-4 agileinfo_stats_grid">
-				<h4 class="counter" id="s">0</h4>
-				<h5>Seconds</h5>
-			</div> 
-			<div class="clearfix"> </div> 
-			<!-- Stats-Number-Scroller-Animation-JavaScript -->
-			<script src="js/waypoints.min.js"></script> 
-			<script src="js/counterup.min.js"></script> 
-			<script>
-				jQuery(document).ready(function( $ ) {
-					$('.counter').counterUp({
-						delay: 10,
-						time: 1000
-					});
-				});
-			</script>
-			<!-- //Stats-Number-Scroller-Animation-JavaScript --> 
-		</div>
-	</div>
-	<!-- //statistics -->
-	<script>
-		function timer() {
-		    var start = new Date(2022, 5, 15); 
-		    var t = new Date() - start;
-		    t = t + 8589000
-		    var h = ~~(t / 1000 / 60 / 60);
-		    if (h < 10) {
-			h = "0" + h;
-		    }
-		    var m = ~~(t / 1000 / 60 % 60);
-		    if (m < 10) {
-			m = "0" + m;
-		    }
-
-		    var s = ~~(t / 1000 % 60);
-		    if (s < 10) {
-			s = "0" + s;
-		    }
-		    document.getElementById('h').innerHTML = h;
-		    document.getElementById('m').innerHTML = m;
-		    document.getElementById('s').innerHTML = s;
-		}
-		timer();
-		setInterval(timer, 1000);
-    	</script>
 	
 	<!-- slid -->
 	<div class="slid">
